@@ -1,0 +1,247 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0
+    ;
+}
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+a{
+    text-decoration: none;
+}
+/* <!-- .................. Navbar ............. --> */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+nav .menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+} 
+nav .nav-left a{
+    color: black;
+    font-size: 22px;
+    transition: 0.7s;
+    padding: 10px;
+}
+nav .nav-left a span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+nav .nav-left a:hover{
+    background-color: #ccc;
+}
+
+nav .nav-right ul{
+    display: inline-flex;
+    gap:20px;
+}
+nav .nav-right ul li a{
+    color: black;
+    font-size: 22px;
+    transition: 0.7s;
+    padding: 10px;
+}
+   
+
+nav .nav-right ul li a:hover{
+    background-color: #ccc;
+}
+/* <!-- .................. Header............. --> */
+header{
+    height: 100vh;
+    background-image: url(33.jpg);
+    background-size: cover;
+    position: relative;
+}
+header h1{
+    top: 50%;
+    left: 45%;
+    color: #fff;
+    font-size: 35px;
+    position: absolute;
+}
+header h1 span{
+    background-color: black;
+    padding: 10px;
+    opacity: 0.7;
+}
+/* <!-- ..................Projects............. --> */
+.Projects{
+    margin: 90%;
+    margin: 100px auto;
+
+}
+.Projects h1{
+    margin-bottom: 20px;
+}
+.houses{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.house{
+    width: 24%;
+    position: relative;
+}
+.house img{
+    width: 100%;
+}
+.house p{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+}
+hr{
+    opacity: 0.3;
+}
+.moaaz{
+    line-height: 1.8;
+    font-size: 16px;
+}
+.About h1{
+    margin-bottom: 20px;
+}
+.chaes{
+    display: flex;
+    margin-top: 50px;
+    gap: 10px;
+}
+.char > *{
+    margin-bottom: 10px;
+}
+.char{
+    width: 24%;
+}
+.char img{
+    width: 100%;
+}
+p{
+    line-height: 1.7;
+    font-size: 16px;
+}
+.char button{
+    width: 100%;
+    padding: 8px;
+    font-weight: bold;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .5s;
+}
+.char button:hover{
+    background-color: #ccc;
+    opacity: 0.5;
+    
+}
+.char h4{
+
+    opacity: 0.5;
+    
+}
+.Contact p{
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+.Contact input{
+    width: 80%;
+    margin-top: 10px;
+    padding: 10px;
+    outline: none;
+}
+.Contact button{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    transition: .7s;
+}
+.Contact button:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+ 
+}
+.container h1{
+    font-size: 50px;
+    
+}
+.container hr{
+    opacity: 0.3;
+}
+.moaz p{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+@media screen and (max-width : 480px){
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+
+    header h2{
+        left: 10%;
+    
+    }
+    .houses{
+        flex-direction: column;
+    }
+    .house{
+        width: 100%;
+    }
+
+    .chars{
+        flex-direction: column;
+    }
+    .char{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width : 481px) and (max-width : 768px){
+    nav{
+        padding: 20px;
+    }
+    nav .nav-right ul{
+        display: none;
+    }
+    nav .menu{
+        display: block;
+    }
+
+    header h2{
+        left: 40%;
+    
+    }
+    .house{
+        width: 48%;
+    }
+    .char{
+        width: 48%;
+    }
+}
+
+   
